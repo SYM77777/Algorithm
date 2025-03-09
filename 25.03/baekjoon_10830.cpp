@@ -47,6 +47,7 @@ void multiply(long long A[5][5], long long num, long long result[5][5]) {
 	}
 
 	long long base[5][5] = { 0, };
+    // 처음 진행하면 base는 1이 될 것이고 그 다음부터는 A^2 or A^3등등이 될 것이다.
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < N; j++) {
 			base[i][j] = A[i][j];
@@ -54,11 +55,11 @@ void multiply(long long A[5][5], long long num, long long result[5][5]) {
 	}
 
 	while (num > 0) {
-		if (num % 2 == 1) {
+		if (num % 2 == 1) { // 만약 홀수인 경우 1을 곱하여 진행
 			cal(result, base, result);
 			num--;
 		}
-		else { // 만약 같은 경우 base를 2번 계산한 값이 될 것이다.
+		else { // 만약 같은 경우 base(넘어온 값)를 2번 계산한 값이 될 것이다.
 			cal(base, base, base);
 			num /= 2;
 		}
