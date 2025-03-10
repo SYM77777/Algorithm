@@ -4,8 +4,5 @@
 ## 🔥 GitHub 커밋 연속 기록
 ![GitHub Streak](https://streak-stats.demolab.com/?user=SYM77777&theme=dark)
 
-## 📊 GitHub 활동 통계  
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SYM77777&show_icons=true&theme=dark)
-
 ## 🟩 GitHub 커밋 그래프
 ![GitHub Contribution Graph](https://ghchart.rshah.org/SYM77777)
